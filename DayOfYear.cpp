@@ -6,14 +6,17 @@
 using namespace std;
 
 DayOfYear::DayOfYear(int d) {
-    this->day = d;
+    this->day = d;      //Set inputted day as this->day
 }
 
 void DayOfYear::print() {
 
+    //Array to hold first day of each month
     int startDayOfMonth[13] = {1,32,60,91,121,152,182,21,244,274,305,335,999};
+    //Array to hold month names
     string month[12] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
+    //Variables to hold final month and day
     string tempMonth;
     int tempDay = 0;
 
@@ -43,6 +46,7 @@ void DayOfYear::print() {
         }
 
     }
+
     // Using the example we would get February 26
     cout << tempMonth << " " << tempDay << endl;
 }
