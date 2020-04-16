@@ -17,7 +17,7 @@ void DayOfYear::print() {
     string tempMonth;
     int tempDay = 0;
 
-    cout << this->day << " days of the year is: ";
+    cout << this->day << " day(s) of the year is: ";
 
     /*
     Here we will check if the day is in between two months. If the day is
